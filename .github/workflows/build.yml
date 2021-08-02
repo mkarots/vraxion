@@ -15,7 +15,7 @@ jobs:
         run: make build
       - name: Test vraxion
         run: make test
-      - name: Run isort
       - uses: jamescurtin/isort-action@master
+      - name: Run isort
         with:
             requirementsFiles: "requirements.txt requirements-test.txt"
